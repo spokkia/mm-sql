@@ -13,3 +13,5 @@ END fn_mm_addseconds;
 CREATE OR REPLACE PUBLIC SYNONYM fn_mm_addseconds FOR fn_mm_sequence;
 
 GRANT EXECUTE ON fn_mm_addseconds TO PUBLIC;
+
+SELECT SYSDATE, fn_mm_addseconds (SYSDATE, 2) FROM DUAL;
