@@ -10,7 +10,7 @@ BEGIN
 END fn_mm_addminutes;
 /
 
-CREATE OR REPLACE PUBLIC SYNONYM fn_mm_addminutes FOR fn_mm_sequence;
+CREATE OR REPLACE PUBLIC SYNONYM fn_mm_addminutes FOR fn_mm_addminutes;
 
 GRANT EXECUTE ON fn_mm_addminutes TO PUBLIC;
 
